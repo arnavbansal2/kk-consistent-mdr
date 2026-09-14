@@ -1,0 +1,11 @@
+# large sampler outputs (archived on Zenodo, see README)
+outputs/run_catalog_outputs/*/
+outputs/validation_outputs/*/
+!outputs/run_catalog_outputs/logs/
+outputs/validation_outputs/1c_null_gains.npy
+# scratch
+.cache/
+__pycache__/
+*.pyc
+*.pickle
+.DS_Store
