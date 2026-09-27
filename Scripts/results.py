@@ -223,7 +223,7 @@ for tag, row in R["cross_veto"].items():
 
 # ============================================================ 5 joint
 hdr("5  JOINT CONSTRAINT (weighted estimator)")
-th_path, lw_path = (os.path.join(JOINT, "joint_theta.npy"), os.path.join(JOINT, "joint_logw.npy"))
+th_path, lw_path = (os.path.join(JOINT, "joint_theta_val.npy"), os.path.join(JOINT, "joint_logw_val.npy"))
 if os.path.exists(th_path) and os.path.exists(lw_path):
     TH, lw = np.load(th_path), np.load(lw_path)
     w = np.exp(lw - lw.max())
